@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a5b9146fcc4b45e16e8d6920c322869f",
+    "content-hash": "cd95755ad2e4a3d6b08cf65f5cb0d9f3",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -2771,11 +2771,17 @@
         },
         {
             "name": "lucacermenati/nova-global-filters",
-            "version": "dev-main",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/lucacermenati/nova-global-filters.git",
+                "reference": "5c7d3744dc349611fb417ca8ce191226e42e90cc"
+            },
             "dist": {
-                "type": "path",
-                "url": "../nova-global-filters",
-                "reference": "7972347732f28cd6249b5cf46d1271558e3213c4"
+                "type": "zip",
+                "url": "https://api.github.com/repos/lucacermenati/nova-global-filters/zipball/5c7d3744dc349611fb417ca8ce191226e42e90cc",
+                "reference": "5c7d3744dc349611fb417ca8ce191226e42e90cc",
+                "shasum": ""
             },
             "require": {
                 "illuminate/support": "^11.0|^12.0|^13.0",
@@ -2791,12 +2797,12 @@
             "type": "library",
             "extra": {
                 "laravel": {
-                    "providers": [
-                        "LucaCermenati\\NovaGlobalFilters\\NovaGlobalFiltersServiceProvider"
-                    ],
                     "aliases": {
                         "NovaGlobalFilters": "LucaCermenati\\NovaGlobalFilters\\Facades\\NovaGlobalFilters"
-                    }
+                    },
+                    "providers": [
+                        "LucaCermenati\\NovaGlobalFilters\\NovaGlobalFiltersServiceProvider"
+                    ]
                 }
             },
             "autoload": {
@@ -2804,47 +2810,44 @@
                     "LucaCermenati\\NovaGlobalFilters\\": "src/"
                 }
             },
-            "autoload-dev": {
-                "psr-4": {
-                    "LucaCermenati\\NovaGlobalFilters\\Tests\\": "tests/"
-                }
-            },
-            "scripts": {
-                "test": [
-                    "vendor/bin/pest"
-                ],
-                "lint": [
-                    "vendor/bin/pint"
-                ]
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
             "authors": [
                 {
-                    "name": "Luca Cermenati"
+                    "name": "Luca Cermenati",
+                    "email": "luca@igne.nl"
                 }
             ],
             "description": "Session-backed global filters for Laravel Nova 5 dashboards: define filters in PHP, render them with one generic card, and make metrics respond to them.",
+            "homepage": "https://github.com/lucacermenati/nova-global-filters",
             "keywords": [
+                "Metrics",
                 "dashboard",
                 "filters",
                 "laravel",
-                "metrics",
                 "nova"
             ],
-            "transport-options": {
-                "symlink": true,
-                "relative": true
-            }
+            "support": {
+                "issues": "https://github.com/lucacermenati/nova-global-filters/issues",
+                "source": "https://github.com/lucacermenati/nova-global-filters"
+            },
+            "time": "2026-10-26T21:03:11+00:00"
         },
         {
             "name": "lucacermenati/nova-settings",
             "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/lucacermenati/nova-settings.git",
+                "reference": "95d25801b39dd540c9afe16a8b524f029dfb3880"
+            },
             "dist": {
-                "type": "path",
-                "url": "../nova-settings",
-                "reference": "46aa2c12f6ec15a4eb13a40982775f1c11eb8ff1"
+                "type": "zip",
+                "url": "https://api.github.com/repos/lucacermenati/nova-settings/zipball/95d25801b39dd540c9afe16a8b524f029dfb3880",
+                "reference": "95d25801b39dd540c9afe16a8b524f029dfb3880",
+                "shasum": ""
             },
             "require": {
                 "illuminate/support": "^11.0|^12.0|^13.0",
@@ -2857,56 +2860,48 @@
                 "orchestra/testbench": "^9.0|^10.0|^11.0",
                 "pestphp/pest": "^3.0|^4.0"
             },
+            "default-branch": true,
             "type": "library",
             "extra": {
                 "laravel": {
-                    "providers": [
-                        "LucaCermenati\\NovaSettings\\NovaSettingsServiceProvider"
-                    ],
                     "aliases": {
                         "NovaSettings": "LucaCermenati\\NovaSettings\\Facades\\NovaSettings"
-                    }
+                    },
+                    "providers": [
+                        "LucaCermenati\\NovaSettings\\NovaSettingsServiceProvider"
+                    ]
                 }
             },
             "autoload": {
-                "psr-4": {
-                    "LucaCermenati\\NovaSettings\\": "src/"
-                },
                 "files": [
                     "src/helpers.php"
-                ]
-            },
-            "autoload-dev": {
+                ],
                 "psr-4": {
-                    "LucaCermenati\\NovaSettings\\Tests\\": "tests/"
+                    "LucaCermenati\\NovaSettings\\": "src/"
                 }
             },
-            "scripts": {
-                "test": [
-                    "vendor/bin/pest"
-                ],
-                "lint": [
-                    "vendor/bin/pint"
-                ]
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
             "authors": [
                 {
-                    "name": "Luca Cermenati"
+                    "name": "Luca Cermenati",
+                    "email": "luca@igne.nl"
                 }
             ],
             "description": "Tab-grouped, database-backed settings for Laravel Nova 5. Define settings in code with real Nova fields or create them from the Nova UI.",
+            "homepage": "https://github.com/lucacermenati/nova-settings",
             "keywords": [
+                "Settings",
                 "laravel",
-                "nova",
-                "settings"
+                "nova"
             ],
-            "transport-options": {
-                "symlink": true,
-                "relative": true
-            }
+            "support": {
+                "issues": "https://github.com/lucacermenati/nova-settings/issues",
+                "source": "https://github.com/lucacermenati/nova-settings"
+            },
+            "time": "2026-10-26T20:57:11+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -11471,7 +11466,6 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "lucacermenati/nova-global-filters": 20,
         "lucacermenati/nova-settings": 20
     },
     "prefer-stable": true,

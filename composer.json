@@ -13,8 +13,8 @@
         "laravel/framework": "^13.17",
         "laravel/nova": "^5.0",
         "laravel/tinker": "^3.0",
-        "lucacermenati/nova-global-filters": "@dev",
-        "lucacermenati/nova-settings": "@dev"
+        "lucacermenati/nova-global-filters": "^1.0",
+        "lucacermenati/nova-settings": "dev-main"
     },
     "require-dev": {
         "fakerphp/faker": "^1.23",
@@ -96,20 +96,6 @@
             "name": "nova",
             "type": "composer",
             "url": "https://nova.laravel.com"
-        },
-        {
-            "type": "path",
-            "url": "../nova-settings",
-            "options": {
-                "symlink": true
-            }
-        },
-        {
-            "type": "path",
-            "url": "../nova-global-filters",
-            "options": {
-                "symlink": true
-            }
         }
     ]
 }
